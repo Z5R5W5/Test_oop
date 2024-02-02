@@ -12,7 +12,6 @@ private:
     string s;
 
 public:
-    oop();
     oop(int xt,string st){
         s=st;x=xt;
     } 
@@ -23,15 +22,13 @@ public:
             "name = "<<s<<'\n'<<
             "count objects = "<<co<<'\n';
             
+
     }
+    oop();
     friend int sum();
-   
-
-    
-
 };
-    int oop:: co=0;
 
+int oop:: co=0;
 oop::oop(){
     cout<<"enter x \n";
     cin>>x;
@@ -47,10 +44,9 @@ int sum(){
     return ob.x+ob.y;
 }
 int main(){
-    cout<<sum();
+    cout<<sum()<<'\n';
     oop ob[3];
    
-    cout<<"=================mm===============\n";
     for(int i=0;i<3;i++){
         ob[i].pr();
     }
